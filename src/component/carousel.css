@@ -1,0 +1,31 @@
+.carousel-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.circle{
+    height: 20px;
+    width: 20px;
+    border: 2px solid #4CAF50;
+    color:#4CAF50;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right:10px ;
+}
+
+.circle-active{
+    height: 20px;
+    width: 20px;
+    border: 2px solid #4CAF50;
+    background-color: #4CAF50;
+    color:white;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right:10px ;
+}
+
+
+.circles-container{
+    margin-top: 10px;
+}
