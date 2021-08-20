@@ -6,8 +6,14 @@ import {AiOutlineArrowLeft,AiOutlineArrowRight} from 'react-icons/ai'
 export default function Carousel() {
     const [currentImage,setCurrentImage] = useState(0)
     const handleImageChange = (index)=>{
-        if(index<images.length && index>=0){
+        if(index<images.length){
             setCurrentImage(index)
+        }
+        else{
+            setCurrentImage(0)
+        }
+        if(index<0){
+            setCurrentImage(images.length-1)
         }
     }
     return (
